@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - GreatStack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <span class="blob blob-mango"></span>
+    <span class="blob blob-pink"></span>
+    <span class="blob blob-bottle"></span>
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p class="eyebrow">AI Developer</p>
+            <h1>Hi, I'm <span>Tahseen</span><br>Fathima</h1>
+            <p class="header-sub">I build agentic AI systems &amp; ML models that turn raw data into decisions.</p>
+        </div>
+    </div>
+</div>
+
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2 about-centered">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an Artificial Intelligence and Machine Learning undergraduate passionate about building intelligent systems that solve real-world problems. My interests include Agentic AI, Natural Language Processing, Computer Vision, and automation. I enjoy transforming ideas into practical applications through machine learning models, AI agents, and modern web technologies while continuously exploring emerging AI innovations.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python, Java, HTML, CSS, JavaScript</li>
+
+                        <li><span>Artificial Intelligence</span><br>Machine Learning, NLP, Computer Vision, Agentic AI</li>
+
+                        <li><span>Frameworks & Tools</span><br>Flask, React, Git, GitHub, Docker, Firebase</li>
+
+                        <li><span>Cloud & Databases</span><br>Azure AI, Azure Fundamentals, MySQL</li>
+
+                        <li><span>Soft Skills</span><br>Problem Solving, Teamwork, Communication & Continuous Learning</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - 2027</span><br>B.E (CSE(AI&ML)) at Saranathan college of Engineering<br>CGPA: 8.37</li>
+                        <li><span>2022 - 2023</span><br>XII at St.Philomena's Girls Higher Secondary School<br>Percentage: 90%</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certificates">
+                    <ul>
+                        <li><span>2024</span><br>Completed a course on Computer Networks and Internet protocol on NPTEL </li>
+                        <li><span>2025</span><br>Completed a course on Azure Fundamentals (AZ-900) on Microsoft Learn</li>
+                        <li><span>2025</span><br>Completed a course on Azure AI Fundamentals (AI-900) on Microsoft Learn</li>
+                        <li><span>2026</span><br>Completed a course on AI Fluency: Framework & Foundations on Anthropic</li>
+                        <li><span>2026</span><br>Completed a course on Claude 101 on Anthropic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">What I do</h1>
+        <div class="services-list">
+
+    <div>
+        <i class="fa-solid fa-laptop"></i>
+        <h2>AI & Machine Learning</h2>
+        <p>Building intelligent applications using machine learning, deep learning, and data-driven solutions.</p>
+        
+    </div>
+
+    <div>
+        <i class="fa-solid fa-brain"></i>
+        <h2>Agentic AI Solutions</h2>
+        <p>Designing autonomous AI agents capable of reasoning, planning, and completing complex workflows.</p>
+        
+    </div>
+
+    <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Full Stack Development</h2>
+        <p>Developing responsive web applications with modern frontend technologies and scalable backend services.</p>
+    </div>
+
+</div>
+    </div>
+</div>
+
+<!-- ------------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Sentiment Analysis</h3>
+                    <p>
+Built an NLP-powered sentiment analysis system that classifies customer opinions and extracts meaningful insights from text data.
+</p>
+                    <a href="#" onclick="openProject('sentiment'); return false;"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Structural Health Monitoring Agent</h3>
+                    <p>
+Developed an AI-powered structural health monitoring platform that analyzes sensor data to detect anomalies and improve infrastructure safety.
+</p>
+                    <a href="#" onclick="openProject('shm'); return false;"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        <div class = work>
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Noteexa - Notes Sharing Platform</h3>
+                    <p>
+Designed a collaborative notes-sharing platform that enables students to securely upload, organize, and access academic resources.
+</p>
+                    <a href="#" onclick="openProject('noteexa'); return false;"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>   
+        </div>
+        <div class="work">
+    <img src="images/work-4.png" alt="DAWT - AI Tools Discovery App">
+
+    <div class="layer">
+        <h3>DAWT</h3>
+
+        <p>
+            A modern AI tools discovery platform that helps users explore, compare, and find the best AI tools across categories with powerful search and filtering.
+        </p>
+
+        <a href="#" onclick="openProject('dawt'); return false;">
+            <i class="fa-solid fa-up-right-from-square"></i>
+        </a>
+    </div>
+</div>
+
+</div>
+
+
+<!-- ----------project popups------------- -->
+<div id="project-modal" class="project-modal" onclick="closeProject(event)">
+    <div class="project-modal-content" onclick="event.stopPropagation()">
+        <button class="project-modal-close" onclick="closeProject()" aria-label="Close">&times;</button>
+
+        <div id="modal-sentiment" class="project-details">
+            <h2>Sentiment Analysis</h2>
+            <p>Built an NLP-powered sentiment analysis system that classifies customer opinions and extracts meaningful insights from text data.</p>
+            <p class="modal-tech">Technologies: Python, NLP, NLTK, Machine Learning</p>
+        </div>
+
+        <div id="modal-shm" class="project-details">
+            <h2>Structural Health Monitoring Agent</h2>
+            <p>Developed an AI-powered structural health monitoring platform that analyzes sensor data to detect anomalies and improve infrastructure safety.</p>
+            <p class="modal-tech">Technologies: Python, AI, Machine Learning, Sensor Data</p>
+        </div>
+
+        <div id="modal-noteexa" class="project-details">
+            <h2>Noteexa - Notes Sharing Platform</h2>
+            <p>Designed a collaborative notes-sharing platform that enables students to securely upload, organize, and access academic resources.</p>
+            <p class="modal-tech">Technologies: HTML, CSS, JavaScript, Firebase</p>
+        </div>
+
+        <div id="modal-dawt" class="project-details">
+            <h2>DAWT</h2>
+            <p>A modern AI tools discovery platform that helps users explore, compare, and find AI tools across categories with powerful search and filtering.</p>
+            <p class="modal-tech">Technologies: React, Vite, Tailwind CSS, JavaScript</p>
+        </div>
+    </div>
+</div>
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>fathimatahseen8@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>+91 8807357660</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tahseen-fathima-ak-10ap2006" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/TAHSEEN-FATHIMA" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Tahseen. Made with <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    function openProject(projectName){
+        const modal = document.getElementById("project-modal");
+        const details = document.querySelectorAll(".project-details");
+
+        details.forEach(detail => {
+            detail.style.display = "none";
+        });
+
+        const selectedProject = document.getElementById("modal-" + projectName);
+
+        if(selectedProject){
+            selectedProject.style.display = "block";
+            modal.classList.add("active");
+            document.body.style.overflow = "hidden";
+        }
+    }
+
+    function closeProject(event){
+        if(event && event.target !== event.currentTarget){
+            return;
+        }
+
+        document.getElementById("project-modal").classList.remove("active");
+        document.body.style.overflow = "";
+    }
+
+    document.addEventListener("keydown", function(event){
+        if(event.key === "Escape"){
+            closeProject();
+        }
+    });
+</script>
+
+<!-- Google Sheets Form Submission Script -->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwyk7hZGzb-hW_7fBVwk437drJn_kGu2syspd9S6LRq_RAi_wr57ZvgpqtDo2Ex1tM2UQ/exec';
+
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        .then(response => {
+            msg.innerHTML = "Message submitted successfully!";
+            form.reset();
+
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+        })
+        .catch(error => {
+            msg.innerHTML = "Something went wrong. Please try again.";
+            console.error('Error!', error.message);
+        });
+    });
+</script>
+</body>
+</html>
